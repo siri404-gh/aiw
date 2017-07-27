@@ -13,6 +13,7 @@
     "build:prod": "./node_modules/.bin/webpack --env=prod --progress --profile --colors",
     "lint": "./node_modules/.bin/eslint src/",
     "commit": "git-cz",
+    "travis": "yarn test:web && yarn build:prod",
     "heroku": "yarn build:prod && yarn start:web"
 	},
 	"dependencies": {
